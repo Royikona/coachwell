@@ -1,0 +1,11 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvQuestionNumber"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_margin="4dp"
+    android:gravity="center"
+    android:background="@drawable/grid_item_background"
+    android:text="1"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:textColor="@color/black" />

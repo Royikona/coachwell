@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "344565374278",
+    "project_id": "coachwell-ab27a",
+    "storage_bucket": "coachwell-ab27a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344565374278:android:4eec46bf641605e1f3d947",
+        "android_client_info": {
+          "package_name": "com.zenicore.coachwell"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1rWd5Vvxs6W1GgXn1BVguR7nhOJXv5Xg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

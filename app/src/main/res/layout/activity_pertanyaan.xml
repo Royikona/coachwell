@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"> <!-- Rata tengah secara horizontal -->
+
+    <ImageView
+        android:id="@+id/iv_signup"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/stresslvl" />
+
+    <TextView
+        android:id="@+id/tvKategoriPertanyaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori: Physical Symptom"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" /> <!-- Tambahkan padding top untuk sedikit jarak -->
+
+    <TextView
+        android:id="@+id/tvPertanyaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apakah atlit merasa sakit kepala?"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rgJawaban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"> <!-- Ubah layout width ke wrap_content agar sesuai konten -->
+
+        <RadioButton
+            android:id="@+id/rbYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+
+        <RadioButton
+            android:id="@+id/rbNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak"
+            android:layout_marginStart="25dp" /> <!-- Menambahkan jarak 16dp di sebelah kiri -->
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNextPertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berikutnya" />
+
+    <!-- Tambahkan RecyclerView untuk grid nomor -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvQuestionGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical"
+        android:overScrollMode="never" />
+
+</LinearLayout>

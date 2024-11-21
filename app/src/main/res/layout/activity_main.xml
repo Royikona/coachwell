@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header untuk judul atau informasi lainnya -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Aplikasi Alat Ukur Tingkat Stress Atlet"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#F28500"
+        android:textColor="#000080" />
+    <!-- Logo atau gambar splash -->
+    <ImageView
+        android:id="@+id/SplashScreenImage"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/splashlogo" />
+    <!-- Deskripsi aplikasi (Hero Section) -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SplashScreenImage"
+        android:padding="16dp"
+        android:text="Aplikasi ini membantu dalam mengukur tingkat stres atlet secara akurat dan memberikan analisis untuk meningkatkan performa mereka. Klik Tombol + untuk menambah Atlet"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <!-- RecyclerView untuk menampilkan daftar atlit -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvDescription"
+        android:padding="16dp" />
+
+    <!-- Pesan jika belum ada data atlit -->
+    <TextView
+        android:id="@+id/tvNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Belum ada data atlit, silahkan tambah"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!-- Tombol FloatingActionButton untuk menambah data baru -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Tambah Atlet"
+        android:backgroundTint="#F28500"
+        android:src="@drawable/icon_tambah" />
+</RelativeLayout>
